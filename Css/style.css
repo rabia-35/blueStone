@@ -1,6 +1,8 @@
+/************* Navbar ***************/
 .navbar {
   border-color: #ffffff;
   font-weight: 500;
+  padding: 0 !important;
 }
 
 .logo > img {
@@ -13,4 +15,25 @@
 .navbar .btn {
   background-color: #0856a2;
   color: #ffffff;
+}
+/************* Slide Area ***************/
+.row {
+  width: 100%;
+  margin: 0 !important;
+}
+.carousel {
+  padding: 0 !important;
+}
+
+.carousel-inner img {
+  height: 650px;
+}
+.slide-info {
+  background-image: linear-gradient(#0856a2, #3c108a);
+}
+
+@media (max-width: 1231px) {
+  .navbar ul {
+    column-gap: 20px;
+  }
 }
