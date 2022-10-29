@@ -15,25 +15,91 @@
 .navbar .btn {
   background-color: #0856a2;
   color: #ffffff;
+  transition: background-color, color, 1s;
 }
-/************* Slide Area ***************/
-.row {
-  width: 100%;
-  margin: 0 !important;
-}
-.carousel {
-  padding: 0 !important;
-}
+/************* Slide Image ***************/
 
 .carousel-inner img {
   height: 650px;
+  width: 100%;
 }
+/************ Slide Info *****************/
 .slide-info {
   background-image: linear-gradient(#0856a2, #3c108a);
+  padding: 0 20%;
+}
+.info-title {
+  font-size: 60px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.slide-info p {
+  color: #ffffff;
+  font-size: larger;
+  letter-spacing: -1px;
 }
 
-@media (max-width: 1231px) {
+.slide-info button {
+  font-size: large;
+  transition: background-color, 1s;
+}
+
+/************************** Media *******************/
+@media (min-width: 1200px) and (max-width: 1231px) {
   .navbar ul {
     column-gap: 20px;
+  }
+}
+@media (min-width: 985px) and (max-width: 1200px) {
+  .info-title {
+    font-size: 40px;
+  }
+  .slide-info p {
+    font-size: large;
+  }
+}
+@media (min-width: 600px) and (max-width: 985px) {
+  .info-title {
+    font-size: 30px;
+  }
+  .slide-info p {
+    font-size: medium;
+  }
+  .slide-info button {
+    font-size: medium;
+  }
+  .carousel-inner img {
+    height: 500px;
+  }
+}
+@media (min-width: 520px) and (max-width: 600px) {
+  .info-title {
+    font-size: 20px;
+  }
+  .slide-info p {
+    font-size: small;
+  }
+  .slide-info button {
+    font-size: small;
+  }
+  .carousel-inner img {
+    height: 400px;
+  }
+}
+@media (max-width: 520px) {
+  .info-title {
+    font-size: 15px;
+  }
+  .slide-info p {
+    font-size: smaller;
+  }
+  .slide-info button {
+    font-size: x-small;
+  }
+  .carousel-inner img {
+    height: 450px;
+  }
+  .logo > img {
+    width: 240px;
   }
 }
