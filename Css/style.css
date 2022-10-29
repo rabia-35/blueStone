@@ -1,0 +1,16 @@
+.navbar {
+  border-color: #ffffff;
+  font-weight: 500;
+}
+
+.logo > img {
+  width: 290px;
+  height: 60px;
+}
+.navbar ul {
+  column-gap: 36px;
+}
+.navbar .btn {
+  background-color: #0856a2;
+  color: #ffffff;
+}
