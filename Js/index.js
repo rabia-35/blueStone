@@ -12,7 +12,7 @@ setInterval(() => {
   } else if (activeItem[0] === carouselItems[1]) {
     slideDesc.innerHTML = `Dolorem nostrum repellat ab pariatur eligendi maiores laboriosam
      necessitatibus numquam ipsum! Veritatis corrupti saepe nisi quis tenetur,laborum temporibus
-      delectus, minima natus, asperiores doloribus rerum.`;
+      delectus, minima natus, asperiores.`;
   } else if (activeItem[0] === carouselItems[2]) {
     slideDesc.innerHTML = `Eius error animi, explicabo consequatur nihil esse atque quisquam aut 
     ab veniam deleniti iusto id nostrum sunt amet cupiditate! Earum quos blanditiis culpa, minima
