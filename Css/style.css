@@ -84,19 +84,23 @@ a {
 .whatwedo h1 {
   font-weight: 900;
 }
-
-.img {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 426px;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  padding: 5%;
-  box-shadow: inset 0px -150px 56px -28px rgba(0, 0, 0, 0.6);
+.col-6 {
+  position: relative;
+  margin: 0 auto;
+}
+.col-6 .img-text {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  box-shadow: inset 0px -100px 56px -48px rgba(0, 0, 0, 0.6);
+  color: #f1f1f1;
+  width: calc(100% - 24px); /* Full width */
+  padding: 100px 20px 20px 20px;
 }
 
+.col-6 img {
+  width: 100%;
+  height: 100%;
+}
 /************************** Media *******************/
 @media (min-width: 1200px) and (max-width: 1231px) {
   .navbar ul {
@@ -110,6 +114,15 @@ a {
   .slide-info p {
     font-size: large;
   }
+  .bluestone-desc h1 {
+    font-size: 350%;
+  }
+  .carousel-inner img {
+    height: 500px;
+  }
+  .bluestone-desc p {
+    font-size: large;
+  }
 }
 @media (min-width: 600px) and (max-width: 985px) {
   .info-title {
@@ -119,40 +132,54 @@ a {
     font-size: medium;
   }
   .slide-info button {
-    font-size: medium;
+    font-size: small;
+    width: 150px;
   }
   .carousel-inner img {
     height: 500px;
   }
-}
-@media (min-width: 520px) and (max-width: 600px) {
-  .info-title {
-    font-size: 20px;
+  .bluestone-desc h1 {
+    font-size: 250%;
   }
-  .slide-info p {
-    font-size: small;
+  .bluestone-desc p {
+    font-size: large;
   }
-  .slide-info button {
-    font-size: small;
-  }
-  .carousel-inner img {
-    height: 400px;
+  .img-text h2 {
+    font-size: larger !important;
   }
 }
-@media (max-width: 520px) {
+@media (max-width: 600px) {
   .info-title {
-    font-size: 15px;
+    font-size: 25px;
   }
   .slide-info p {
-    font-size: smaller;
+    font-size: x-small;
+    letter-spacing: 0.2px;
   }
   .slide-info button {
     font-size: x-small;
   }
   .carousel-inner img {
-    height: 450px;
+    height: 330px;
   }
+  .bluestone-desc h1 {
+    font-size: 250%;
+  }
+  .bluestone-desc p {
+    font-size: medium;
+  }
+  .img-text h2 {
+    font-size: medium !important;
+  }
+}
+@media (max-width: 475px) {
   .logo > img {
     width: 240px;
+  }
+  .info-title {
+    font-size: 15px;
+  }
+  .col-6 .img-text {
+    padding-top: 40%;
   }
 }
