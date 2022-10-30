@@ -1,3 +1,7 @@
+body {
+  background-color: #ffffff;
+}
+
 /************* Navbar ***************/
 .navbar {
   border-color: #ffffff;
@@ -42,6 +46,36 @@
 .slide-info button {
   font-size: large;
   transition: background-color, 1s;
+}
+/******************** BlueStone Description ***********/
+.bluestone-desc {
+  margin: 5% auto;
+}
+.bluestone-desc h1 {
+  font-size: 400%;
+  font-weight: 900;
+  background: -webkit-linear-gradient(135deg, #0856a2 70%, #3c108a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+.bluestone-desc h1::before {
+  position: absolute;
+  left: 0;
+  top: 1.3em;
+  height: 0;
+  width: 80px;
+  content: "";
+  border-width: 3px 0px 0px 0px;
+  border-style: solid;
+  border-image: linear-gradient(45deg, #3c108a, #0856a2) 5;
+}
+.bluestone-desc h2 {
+  font-weight: 700;
+  margin-right: 16%;
+}
+.bluestone-desc p {
+  letter-spacing: -1px;
 }
 
 /************************** Media *******************/
