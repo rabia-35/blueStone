@@ -1,9 +1,15 @@
 body {
   background-color: #ffffff;
 }
-
+p {
+  letter-spacing: -1px;
+}
+a {
+  color: #0856a2 !important;
+}
 /************* Navbar ***************/
 .navbar {
+  height: 90px;
   border-color: #ffffff;
   font-weight: 500;
   padding: 0 !important;
@@ -18,13 +24,13 @@ body {
 }
 .navbar .btn {
   background-color: #0856a2;
-  color: #ffffff;
+  color: #ffffff !important;
   transition: background-color, color, 1s;
 }
 /************* Slide Image ***************/
 
 .carousel-inner img {
-  height: 650px;
+  height: 700px;
   width: 100%;
 }
 /************ Slide Info *****************/
@@ -40,7 +46,6 @@ body {
 .slide-info p {
   color: #ffffff;
   font-size: larger;
-  letter-spacing: -1px;
 }
 
 .slide-info button {
@@ -74,8 +79,22 @@ body {
   font-weight: 700;
   margin-right: 16%;
 }
-.bluestone-desc p {
-  letter-spacing: -1px;
+
+/******************** What We Do Area ***************/
+.whatwedo h1 {
+  font-weight: 900;
+}
+
+.img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 426px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 5%;
+  box-shadow: inset 0px -150px 56px -28px rgba(0, 0, 0, 0.6);
 }
 
 /************************** Media *******************/
