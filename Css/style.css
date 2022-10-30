@@ -4,12 +4,9 @@ body {
 p {
   letter-spacing: -1px;
 }
-a {
-  color: #0856a2 !important;
-}
 /************* Navbar ***************/
 .navbar {
-  height: 90px;
+  min-height: 90px;
   border-color: #ffffff;
   font-weight: 500;
   padding: 0 !important;
@@ -24,7 +21,7 @@ a {
 }
 .navbar .btn {
   background-color: #0856a2;
-  color: #ffffff !important;
+  color: #ffffff;
   transition: background-color, color, 1s;
 }
 /************* Slide Image ***************/
@@ -78,6 +75,9 @@ a {
 .bluestone-desc h2 {
   font-weight: 700;
   margin-right: 16%;
+}
+.text-decoration-none {
+  color: #0856a2; /* Read More Field*/
 }
 
 /******************** What We Do Area ***************/
