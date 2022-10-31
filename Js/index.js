@@ -8,14 +8,14 @@ setInterval(() => {
     slideDesc.innerHTML = `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim
     quisquam quis eaque cumque ratione, fuga deserunt facilis
     exercitationem assumenda ex sed, consequatur accusantium quam
-    consectetur, numquam excepturi`;
+    consectetur,`;
   } else if (activeItem[0] === carouselItems[1]) {
     slideDesc.innerHTML = `Dolorem nostrum repellat ab pariatur eligendi maiores laboriosam
      necessitatibus numquam ipsum! Veritatis corrupti saepe nisi quis tenetur,laborum temporibus
-      delectus, minima natus, asperiores.`;
+      delectus, minima.`;
   } else if (activeItem[0] === carouselItems[2]) {
     slideDesc.innerHTML = `Eius error animi, explicabo consequatur nihil esse atque quisquam aut 
     ab veniam deleniti iusto id nostrum sunt amet cupiditate! Earum quos blanditiis culpa, minima
-     maxime autem eaque error cupiditate magni! `;
+     maxime autem eaque error! `;
   }
 }, 2000);
