@@ -175,14 +175,18 @@ a {
   border-radius: 50%;
 }
 
+.company-img img {
+  width: 95%;
+}
 /************************** Latest ******************/
 .latest .time {
   color: #0856a2;
   border-right: 2px solid rgb(194, 194, 194);
 }
+
 /************************** Contact *****************/
 .contact h1 {
-  font-size: 390%;
+  font-size: 60px;
 }
 .contact a {
   font-weight: 600;
@@ -208,6 +212,11 @@ form button {
   font-size: larger;
 }
 /************************** Media *******************/
+@media (max-width: 1400px) {
+  .latest .time strong {
+    font-size: x-large !important;
+  }
+}
 @media (min-width: 1200px) and (max-width: 1231px) {
   .navbar ul {
     column-gap: 20px;
@@ -244,8 +253,23 @@ form button {
     width: 50px;
     line-height: 50%;
   }
+  .latest .time strong {
+    font-size: large !important;
+  }
+  .latest .time small {
+    font-size: x-small !important;
+  }
+  .latest .card-title {
+    font-size: medium;
+  }
+  .latest .card-text {
+    font-size: small;
+  }
+  .contact h1 {
+    font-size: 40px;
+  }
 }
-@media (min-width: 600px) and (max-width: 985px) {
+@media (min-width: 577px) and (max-width: 985px) {
   .info-title {
     font-size: 30px;
   }
@@ -268,8 +292,29 @@ form button {
   .img-text h2 {
     font-size: larger !important;
   }
+  .companies .text p {
+    font-size: smaller !important;
+  }
+  .companies .text h2 {
+    font-size: large;
+  }
+  .latest .time strong {
+    font-size: large !important;
+  }
+  .latest .time small {
+    font-size: x-small !important;
+  }
+  .latest .card-title {
+    font-size: small;
+  }
+  .latest .card-text {
+    font-size: smaller;
+  }
+  .contact h1 {
+    font-size: 40px;
+  }
 }
-@media (max-width: 600px) {
+@media (max-width: 577px) {
   .info-title {
     font-size: 25px;
   }
@@ -291,6 +336,15 @@ form button {
   }
   .img-text h2 {
     font-size: medium !important;
+  }
+  .companies .text p {
+    font-size: x-small !important;
+  }
+  .companies .text h2 {
+    font-size: medium;
+  }
+  .company-img img {
+    width: 70%;
   }
 }
 @media (max-width: 475px) {
