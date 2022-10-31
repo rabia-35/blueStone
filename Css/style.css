@@ -4,6 +4,9 @@ body {
 p {
   letter-spacing: -1px;
 }
+h1 {
+  font-weight: 900 !important;
+}
 /************* Navbar ***************/
 .navbar {
   min-height: 90px;
@@ -55,7 +58,6 @@ p {
 }
 .bluestone-desc h1 {
   font-size: 400%;
-  font-weight: 900;
   background: -webkit-linear-gradient(135deg, #0856a2 70%, #3c108a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -80,15 +82,13 @@ p {
   color: #0856a2; /* Read More Field*/
 }
 
-/******************** What We Do Area ***************/
-.whatwedo h1 {
-  font-weight: 900;
-}
-.col-6 {
+/******************** What We Do  ***************/
+
+.whatwedo .col-6 {
   position: relative;
   margin: 0 auto;
 }
-.col-6 .img-text {
+.whatwedo .img-text {
   position: absolute; /* Position the background text */
   bottom: 0; /* At the bottom. Use top:0 to append it to the top */
   box-shadow: inset 0px -100px 56px -48px rgba(0, 0, 0, 0.6);
@@ -97,9 +97,59 @@ p {
   padding: 100px 20px 20px 20px;
 }
 
-.col-6 img {
+.whatwedo img {
   width: 100%;
   height: 100%;
+}
+/******************** Our Work *******************/
+.ourwork img {
+  width: 100%;
+  height: 100%;
+}
+
+.ourwork-col {
+  position: relative;
+  margin: 0 auto;
+}
+.time small {
+  font-size: medium;
+}
+.ourwork .time {
+  font-size: xx-large;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  color: #ffffff;
+  width: 80px;
+  line-height: 90%;
+  background-color: #ff3d55;
+}
+
+.ourwork-tooltip {
+  background-color: #ffffff;
+  min-width: 60%;
+  position: absolute;
+  top: 85%;
+  left: 20%;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.325);
+  padding: 5% 0;
+  transition: visibility, 1s ease-in-out;
+}
+.ourwork-tooltip h2 {
+  color: #0856a2;
+  font-weight: bold;
+}
+.ourwork-tooltip p {
+  font-size: large;
+}
+.tooltip-1:hover .tooltip-1 {
+  visibility: visible !important;
+}
+.tooltip-2:hover .tooltip-2 {
+  visibility: visible !important;
+}
+.tooltip-3:hover .tooltip-3 {
+  visibility: visible !important;
 }
 /************************** Media *******************/
 @media (min-width: 1200px) and (max-width: 1231px) {
@@ -114,6 +164,9 @@ p {
   .slide-info p {
     font-size: large;
   }
+  .slide-info button {
+    font-size: medium;
+  }
   .bluestone-desc h1 {
     font-size: 350%;
   }
@@ -122,6 +175,18 @@ p {
   }
   .bluestone-desc p {
     font-size: large;
+  }
+  .time strong {
+    font-size: x-large;
+  }
+  .time small {
+    font-size: small;
+  }
+  .ourwork .time {
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    line-height: 50%;
   }
 }
 @media (min-width: 600px) and (max-width: 985px) {
@@ -132,7 +197,7 @@ p {
     font-size: medium;
   }
   .slide-info button {
-    font-size: small;
+    font-size: medium;
     width: 150px;
   }
   .carousel-inner img {
@@ -181,5 +246,32 @@ p {
   }
   .col-6 .img-text {
     padding-top: 40%;
+  }
+  .time strong {
+    font-size: medium !important;
+  }
+  .time small {
+    font-size: xx-small !important;
+  }
+  .ourwork .time {
+    top: 10px !important;
+    left: 10px !important;
+    width: 30px;
+    list-style: 5% !important;
+    padding: 6px !important;
+  }
+}
+@media (max-width: 985px) {
+  .time strong {
+    font-size: large;
+  }
+  .time small {
+    font-size: x-small;
+  }
+  .ourwork .time {
+    top: 20px;
+    left: 20px;
+    width: 30px;
+    line-height: 10%;
   }
 }
