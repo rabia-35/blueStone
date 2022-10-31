@@ -151,6 +151,24 @@ h1 {
 .tooltip-3:hover .tooltip-3 {
   visibility: visible !important;
 }
+/************************ companies ******************/
+.companies {
+  background-color: #3d348d;
+  color: #ffffff;
+  padding: 5% 0;
+}
+.companies .text p {
+  letter-spacing: 1px;
+}
+.companies .carousel {
+  width: 50%;
+}
+.companies .carousel-inner img {
+  height: 50%;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 50%;
+}
 /************************** Media *******************/
 @media (min-width: 1200px) and (max-width: 1231px) {
   .navbar ul {
