@@ -7,6 +7,9 @@ p {
 h1 {
   font-weight: 900 !important;
 }
+a {
+  text-decoration-line: none !important;
+}
 /************* Navbar ***************/
 .navbar {
   min-height: 90px;
@@ -155,6 +158,8 @@ h1 {
 .companies {
   background-color: #3d348d;
   color: #ffffff;
+  margin-top: 5%;
+  margin-bottom: 5%;
   padding: 5% 0;
 }
 .companies .text p {
@@ -174,6 +179,33 @@ h1 {
 .latest .time {
   color: #0856a2;
   border-right: 2px solid rgb(194, 194, 194);
+}
+/************************** Contact *****************/
+.contact h1 {
+  font-size: 390%;
+}
+.contact a {
+  font-weight: 600;
+  font-size: large;
+}
+.contact .form-control {
+  border: none;
+  border-bottom: 2px solid rgb(207, 207, 207);
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.form-select {
+  border: none !important;
+  border-bottom: 2px solid rgb(207, 207, 207) !important;
+  padding-top: 5% !important;
+  padding-bottom: 5% !important;
+}
+form button {
+  background-color: #0856a2;
+  color: #ffffff;
+  height: 60px;
+  border: none;
+  font-size: larger;
 }
 /************************** Media *******************/
 @media (min-width: 1200px) and (max-width: 1231px) {
