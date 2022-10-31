@@ -169,6 +169,12 @@ h1 {
   margin: 0 auto;
   border-radius: 50%;
 }
+
+/************************** Latest ******************/
+.latest .time {
+  color: #0856a2;
+  border-right: 2px solid rgb(194, 194, 194);
+}
 /************************** Media *******************/
 @media (min-width: 1200px) and (max-width: 1231px) {
   .navbar ul {
