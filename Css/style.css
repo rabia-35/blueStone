@@ -16,6 +16,16 @@ ul {
 ul li {
   list-style: none;
 }
+
+/************* Header Contact ********/
+.header-contact li:nth-last-child(n + 2) {
+  border-right: 1px solid #868686;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.contact-social li {
+  border-right: none !important;
+}
 /************* Navbar ***************/
 .navbar {
   min-height: 90px;
@@ -430,6 +440,9 @@ form button {
   .footer .col-6 h2 {
     font-size: medium;
   }
+  .header-contact {
+    font-size: x-small !important;
+  }
 }
 @media (max-width: 475px) {
   .logo > img {
@@ -467,5 +480,8 @@ form button {
     left: 20px;
     width: 30px;
     line-height: 10%;
+  }
+  .header-contact {
+    font-size: small;
   }
 }
