@@ -5,4 +5,5 @@
 * Fontawesome 
 * Bootstrap
 ## Project Image
-![blueStone-img](https://user-images.githubusercontent.com/85495654/199144413-0a041cda-bf85-4f26-9400-249b6f8db179.png)
+
+![blueStone-img](https://user-images.githubusercontent.com/85495654/199145723-d9092588-d70c-4c66-89c0-50b0334b0c1c.png)
