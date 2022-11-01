@@ -10,6 +10,12 @@ h1 {
 a {
   text-decoration-line: none !important;
 }
+ul {
+  padding: 0 !important;
+}
+ul li {
+  list-style: none;
+}
 /************* Navbar ***************/
 .navbar {
   min-height: 90px;
@@ -211,6 +217,30 @@ form button {
   border: none;
   font-size: larger;
 }
+/************************** Footer ******************/
+.footer {
+  background-color: #111111;
+}
+.footer {
+  color: #ffffff;
+}
+.social-media {
+  border-top: 1px solid #868686;
+}
+.social-media p {
+  letter-spacing: 1px;
+}
+.left-panel li:nth-child(n + 2) {
+  border-left: 1px solid #868686;
+  margin-left: 2%;
+  padding-left: 2%;
+}
+.right-panel {
+  margin-right: 8%;
+}
+.right-panel li {
+  margin-right: 20%;
+}
 /************************** Media *******************/
 @media (max-width: 1400px) {
   .latest .time strong {
@@ -268,6 +298,15 @@ form button {
   .contact h1 {
     font-size: 40px;
   }
+  .footer .col-10 {
+    font-size: small;
+  }
+  .footer p {
+    letter-spacing: -1px;
+  }
+  .right-panel i {
+    font-size: large;
+  }
 }
 @media (min-width: 577px) and (max-width: 985px) {
   .info-title {
@@ -313,7 +352,30 @@ form button {
   .contact h1 {
     font-size: 40px;
   }
+  .footer h3 {
+    font-size: medium;
+  }
+  .footer .col-10 {
+    font-size: small;
+  }
+  .footer p {
+    letter-spacing: -0.5px;
+    font-size: smaller !important;
+  }
+  .left-panel li {
+    font-size: small;
+  }
+  .right-panel i {
+    font-size: large;
+  }
+  .footer .col-6 li {
+    font-size: x-small;
+  }
+  .footer .col-6 h2 {
+    font-size: medium;
+  }
 }
+
 @media (max-width: 577px) {
   .info-title {
     font-size: 25px;
@@ -345,6 +407,28 @@ form button {
   }
   .company-img img {
     width: 70%;
+  }
+  .footer h3 {
+    font-size: small;
+  }
+  .footer .col-10 {
+    font-size: xx-small;
+  }
+  .footer p {
+    letter-spacing: -0.5px;
+    font-size: xx-small !important;
+  }
+  .left-panel li {
+    font-size: xx-small !important;
+  }
+  .right-panel i {
+    font-size: xx-small;
+  }
+  .footer .col-6 li {
+    font-size: x-small;
+  }
+  .footer .col-6 h2 {
+    font-size: medium;
   }
 }
 @media (max-width: 475px) {
